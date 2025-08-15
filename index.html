@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Roaring Underground</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/lucide-react@0.261.0/dist/lucide.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-[#0b0f13] via-[#0b1116] to-[#07161a] text-white font-sans">
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4">
+      <div class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/20 ring-1 ring-teal-500/40">
+          🎵
+        </div>
+        <div>
+          <div class="text-sm font-semibold tracking-widest text-teal-300 uppercase">The Roaring</div>
+          <div class="-mt-1 text-xl font-black tracking-tight">Underground</div>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6">
+        <a href="#about" class="text-white/80 hover:text-white">About</a>
+        <a href="#boutique" class="text-white/80 hover:text-white">Boutique</a>
+        <a href="#menu" class="text-white/80 hover:text-white">Menu</a>
+        <a href="#events" class="text-white/80 hover:text-white">Events</a>
+        <a href="#contact" class="text-white/80 hover:text-white">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:inline-flex bg-teal-500 text-black px-5 py-2 rounded-2xl hover:bg-teal-400">Reserve a Table</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="min-h-[70vh] flex items-center justify-center text-center px-4 py-16 bg-[url('https://images.unsplash.com/photo-1541558969431-1c6b3b7c3af7')] bg-cover bg-center">
+    <div class="bg-black/50 p-8 rounded-xl">
+      <h1 class="text-5xl font-black mb-4">Enumclaw’s Hidden <span class="text-teal-300">Speakeasy</span></h1>
+      <p class="text-white/70 mb-6">Behind the boutique, discover craft cocktails, chef-driven plates, and live music in a 1920s-inspired hideaway.</p>
+      <a href="#menu" class="inline-block bg-teal-500 text-black px-5 py-3 rounded-2xl mr-3 hover:bg-teal-400 mb-2">View Menu</a>
+      <a href="#boutique" class="inline-block bg-white/10 px-5 py-3 rounded-2xl hover:bg-white/20 mb-2">Explore Boutique</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 border-t border-white/10">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">The Roaring Underground</h2>
+      <p class="text-white/70">A blend of shopping, dining, and nightlife—right in the heart of Enumclaw. Start in our mixology boutique, wander past the velvet curtain, and find yourself in a candlelit bar and restaurant serving inventive cocktails and seasonal dishes. Live music and intimate gatherings make every visit unforgettable.</p>
+    </div>
+  </section>
+
+  <!-- Boutique -->
+  <section id="boutique" class="py-20 border-t border-white/10">
+    <div class="max-w-6xl mx-auto text-center mb-10">
+      <h2 class="text-3xl font-bold mb-4">Mixology Essentials</h2>
+      <p class="text-white/70">Your gateway to the speakeasy—and your home bar.</p>
+    </div>
+    <div class="max-w-6xl mx-auto grid gap-6 md:grid-cols-3 px-4">
+      <div class="bg-white/5 p-6 rounded-2xl border border-white/10">Artisan glassware<br><span class="text-white/70">Available in-store. Perfect for gifts or upgrading your mixology game.</span></div>
+      <div class="bg-white/5 p-6 rounded-2xl border border-white/10">Small-batch bitters<br><span class="text-white/70">Available in-store. Perfect for gifts or upgrading your mixology game.</span></div>
+      <div class="bg-white/5 p-6 rounded-2xl border border-white/10">Vintage bar tools<br><span class="text-white/70">Available in-store. Perfect for gifts or upgrading your mixology game.</span></div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="py-20 border-t border-white/10">
+    <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 px-4">
+      <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+        <h3 class="text-xl font-semibold mb-2">Cocktails</h3>
+        <ul class="text-white/70 space-y-2">
+          <li>Enumclaw Mule – Local honey vodka, ginger beer</li>
+          <li>Smoked Old Fashioned – Bourbon, smoked glass, orange peel</li>
+          <li>Seasonal Spritz – Rotating flavors</li>
+        </ul>
+      </div>
+      <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+        <h3 class="text-xl font-semibold mb-2">Plates</h3>
+        <ul class="text-white/70 space-y-2">
+          <li>Charcuterie Board – Local meats & cheeses</li>
+          <li>Seared Scallops – Herb butter, roasted vegetables</li>
+          <li>Chocolate Torte – Sea salt, espresso cream</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="py-20 border-t border-white/10 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Live at the Speakeasy</h2>
+      <p class="text-white/70">From jazz trios to themed tasting nights. Check back soon for our upcoming event calendar.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 border-t border-white/10 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Book Your Night</h2>
+      <p class="text-white/70 mb-6">Reservations, private parties, or just say hello.</p>
+      <p class="mb-2">📧 hello@roaringunderground.com</p>
+      <p class="mb-2">📞 (555) 867‑1930</p>
+      <p>📍 Enumclaw, WA</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-10 text-center text-white/60">
+    <p>© 2025 The Roaring Underground. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
